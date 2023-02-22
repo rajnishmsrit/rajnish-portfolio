@@ -43,7 +43,7 @@ export default async function HomePage() {
           <a
             rel="noopener noreferrer"
             target="_blank"
-            href="https://twitter.com/leeerob"
+            href="https://twitter.com/rajn1shkumar"
             className="flex items-center gap-2"
           >
             <TwitterIcon />
@@ -52,16 +52,10 @@ export default async function HomePage() {
           <a
             rel="noopener noreferrer"
             target="_blank"
-            href="https://github.com/leerob"
+            href="https://github.com/rajnishmsrit"
             className="flex items-center gap-2"
           >
-            <GitHubIcon />
-            {`${starCount.toLocaleString()} stars on this repo`}
           </a>
-          <Link href="/blog" className="flex items-center">
-            <ViewsIcon />
-            {`${views.toLocaleString()} blog views all time`}
-          </Link>
         </div>
       </div>
       <p className="my-5 max-w-[600px] text-neutral-800 dark:text-neutral-200">
@@ -73,13 +67,13 @@ export default async function HomePage() {
             className="flex items-center hover:text-neutral-700 dark:hover:text-neutral-200 transition-all"
             rel="noopener noreferrer"
             target="_blank"
-            href="https://twitter.com/leeerob"
+            href="https://twitter.com/rajn1shkumar"
           >
             <ArrowIcon />
             <p className="h-7">follow me on twitter</p>
           </a>
         </li>
-        <li>
+        {/* <li>
           <a
             className="flex items-center hover:text-neutral-700 dark:hover:text-neutral-200 transition-all"
             rel="noopener noreferrer"
@@ -89,7 +83,7 @@ export default async function HomePage() {
             <ArrowIcon />
             <p className="h-7">get email updates</p>
           </a>
-        </li>
+        </li> */}
       </ul>
     </section>
   );
