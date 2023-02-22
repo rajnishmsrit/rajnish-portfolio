@@ -30,34 +30,6 @@ export default async function HomePage() {
       <p className="my-5 max-w-[460px] text-neutral-800 dark:text-neutral-200">
         {about()}
       </p>
-      <div className="flex items-start md:items-center my-8 flex-col md:flex-row">
-        <Image
-          alt={name}
-          className="rounded-full grayscale"
-          src={avatar}
-          placeholder="blur"
-          width={100}
-          priority
-        />
-        <div className="mt-8 md:mt-0 ml-0 md:ml-6 space-y-2 text-neutral-500 dark:text-neutral-400">
-          <a
-            rel="noopener noreferrer"
-            target="_blank"
-            href="https://twitter.com/rajn1shkumar"
-            className="flex items-center gap-2"
-          >
-            <TwitterIcon />
-            {`${tweetCount.toLocaleString()} tweets all time`}
-          </a>
-          <a
-            rel="noopener noreferrer"
-            target="_blank"
-            href="https://github.com/rajnishmsrit"
-            className="flex items-center gap-2"
-          >
-          </a>
-        </div>
-      </div>
       <p className="my-5 max-w-[600px] text-neutral-800 dark:text-neutral-200">
         {bio()}
       </p>
@@ -70,20 +42,31 @@ export default async function HomePage() {
             href="https://twitter.com/rajn1shkumar"
           >
             <ArrowIcon />
-            <p className="h-7">follow me on twitter</p>
+            <p className="h-7">twitter</p>
           </a>
         </li>
-        {/* <li>
+        <li>
           <a
             className="flex items-center hover:text-neutral-700 dark:hover:text-neutral-200 transition-all"
             rel="noopener noreferrer"
             target="_blank"
-            href="https://leerob.substack.com"
+            href="https://www.linkedin.com/in/rajnishmsrit/"
           >
             <ArrowIcon />
-            <p className="h-7">get email updates</p>
+            <p className="h-7">linkedin</p>
           </a>
-        </li> */}
+        </li>
+        <li>
+          <a
+            className="flex items-center hover:text-neutral-700 dark:hover:text-neutral-200 transition-all"
+            rel="noopener noreferrer"
+            target="_blank"
+            href="https://github.com/rajnishmsrit"
+          >
+            <ArrowIcon />
+            <p className="h-7">github</p>
+          </a>
+        </li>
       </ul>
     </section>
   );

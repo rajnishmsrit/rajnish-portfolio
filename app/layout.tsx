@@ -1,6 +1,6 @@
 import './global.css';
 import clsx from 'clsx';
-import type { Metadata } from 'next';
+//import type { Metadata } from 'next';
 import localFont from '@next/font/local';
 import Sidebar from '../components/sidebar';
 import AnalyticsWrapper from '../components/analytics';
@@ -12,50 +12,50 @@ const kaisei = localFont({
   display: 'swap',
 });
 
-export const metadata: Metadata = {
-  title: {
-    default: 'Rajnish Kumar',
-    template: '%s | Rajnish Kumar',
-  },
-  description: 'Developer, writer, and creator.',
-  openGraph: {
-    title: 'Rajnish Kumar',
-    description: 'Developer, writer, and creator.',
-    url: 'https://leerob.io',
-    siteName: 'Rajnish Kumar',
-    images: [
-      {
-        url: 'https://leerob.io/og.jpg',
-        width: 1920,
-        height: 1080,
-      },
-    ],
-    locale: 'en-US',
-    type: 'website',
-  },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
-    },
-  },
-  twitter: {
-    title: 'Rajnish Kumar',
-    card: 'summary_large_image',
-  },
-  icons: {
-    shortcut: '/favicon.ico',
-  },
-  verification: {
-    google: 'eZSdmzAXlLkKhNJzfgwDqWORghxnJ8qR9_CHdAh5-xw',
-    yandex: '14d2e73487fa6c71',
-  },
-};
+// export const metadata: Metadata = {
+//   title: {
+//     default: 'Rajnish Kumar',
+//     template: '%s | Rajnish Kumar',
+//   },
+//   description: 'Developer, writer, and creator.',
+//   openGraph: {
+//     title: 'Rajnish Kumar',
+//     description: 'Developer, writer, and creator.',
+//     url: 'https://leerob.io',
+//     siteName: 'Rajnish Kumar',
+//     images: [
+//       {
+//         url: 'https://leerob.io/og.jpg',
+//         width: 1920,
+//         height: 1080,
+//       },
+//     ],
+//     locale: 'en-US',
+//     type: 'website',
+//   },
+//   robots: {
+//     index: true,
+//     follow: true,
+//     googleBot: {
+//       index: true,
+//       follow: true,
+//       'max-video-preview': -1,
+//       'max-image-preview': 'large',
+//       'max-snippet': -1,
+//     },
+//   },
+//   twitter: {
+//     title: 'Rajnish Kumar',
+//     card: 'summary_large_image',
+//   },
+//   icons: {
+//     shortcut: '/favicon.ico',
+//   },
+//   verification: {
+//     google: 'eZSdmzAXlLkKhNJzfgwDqWORghxnJ8qR9_CHdAh5-xw',
+//     yandex: '14d2e73487fa6c71',
+//   },
+// };
 
 export default function RootLayout({
   children,
